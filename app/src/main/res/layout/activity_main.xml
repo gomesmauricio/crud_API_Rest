@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtId"
+        android:layout_width="353dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txt_cod"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txt_nome"
+        app:layout_constraintEnd_toEndOf="@+id/txtId"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtId"
+        app:layout_constraintTop_toBottomOf="@+id/txtId" />
+
+    <Button
+        android:id="@+id/btSalvar"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="68dp"
+        android:onClick="salvar"
+        android:text="@string/bt_salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <Button
+        android:id="@+id/btBuscar"
+        android:layout_width="341dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:onClick="buscar"
+        android:text="@string/bt_buscar"
+        app:layout_constraintEnd_toEndOf="@+id/btSalvar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btSalvar"
+        app:layout_constraintTop_toBottomOf="@+id/btSalvar" />
+
+    <Button
+        android:id="@+id/btExcluir"
+        android:layout_width="343dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:onClick="excluir"
+        android:text="@string/bt_excluir"
+        app:layout_constraintEnd_toEndOf="@+id/btBuscar"
+        app:layout_constraintStart_toStartOf="@+id/btBuscar"
+        app:layout_constraintTop_toBottomOf="@+id/btBuscar" />
+
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="82dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/edt_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btExcluir" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/edt_nome"
+        app:layout_constraintEnd_toEndOf="@+id/edtId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtId"
+        app:layout_constraintTop_toBottomOf="@+id/edtId" />
+</androidx.constraintlayout.widget.ConstraintLayout>

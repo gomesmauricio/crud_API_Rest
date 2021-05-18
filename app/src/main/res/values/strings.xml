@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Crud_API_Rest</string>
+    <string name="txt_cod">Informe o Código para buscar</string>
+    <string name="txt_nome">Informe o nome</string>
+    <string name="bt_salvar">SALVAR</string>
+    <string name="bt_buscar">BUSCAR</string>
+    <string name="bt_excluir">EXCLUIR</string>
+    <string name="edt_id">ID</string>
+    <string name="edt_nome">Nome</string>
+</resources>
